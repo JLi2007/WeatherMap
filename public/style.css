@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Cutive&family=Poppins&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(images/Weather.jpg);
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(240, 248, 255, 0.75);
+    border: 5px solid rgb(138, 198, 250);
+    width: 100vh;
+    padding: 4% 26.7%;
+}
+
+.container h1{
+    font-size: 5rem;
+    letter-spacing: 0.05cm;
+    display: flex;
+    justify-content: center;
+}
+
+.container h4{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 45vh;
+    height: 3vh;
+    padding: 14px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid aliceblue;
+    font-family: inherit;
+    outline: none;
+    box-shadow: 2px 2px 5px rgb(138, 198, 250);
+    margin-top: 10px;
+    transition: 0.2s ease-out;
+}
+
+input:focus{
+    transform: scale(1.05);
+}
+
+select{
+    width: 30vh;
+    height: auto;
+    padding: 14px;
+    border: 1px solid aliceblue;
+    font-family: inherit;
+    outline: none;
+    box-shadow: 2px 2px 5px rgb(138, 198, 250);
+    margin-top: 10px;
+    transition: 0.3s ease-out;
+}
+
+select:focus{
+    filter: brightness(97%);
+}
+
+#submit{
+    height: auto;
+    padding: 14px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid aliceblue;
+    background-color: white;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: 2px 3px 5px rgb(138, 198, 250);
+    transition: 0.3s ease-out;
+}
+
+#submit:hover{
+    color: rgb(138, 198, 250);
+    background-color: aliceblue;
+    border: rgb(138, 198, 250);
+    transform: scale(1.05);
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(240, 248, 255, 0.4);
+    overflow: hidden;
+    border-bottom: 5px solid rgb(138, 198, 250);
+    height: auto;
+}
+
+.output{
+    background: rgba(240, 248, 255, 0.65);
+    border-left: 5px solid rgb(138, 198, 250);
+    border-right: 5px solid rgb(138, 198, 250);
+    border-bottom: 5px solid rgb(138, 198, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+.output h3{
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.error-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    height: 100%;
+}
+
+.roots-class{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.city-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0% 2.5% 0% -2.5%;
+}
+
+.main-container {
+    border: 3px solid rgb(138, 198, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-class{
+    display:flex;
+    width: 20%;
+    height: auto;
+    margin: 0% -2.5% 0% 2.5%;
+}
+
+.min-class{
+    font-size: 1.5rem;
+}
+
+#Map {
+    width: 50%;
+    height: calc(46vh - 5px);
+    border-right: 5px solid rgb(138, 198, 250);
+    border-bottom: 5px solid rgb(138, 198, 250);
+}
+
+/* Media Queries (Unfinsished) */
+@media (min-width: 1700px) and (max-width: 1900px) {
+    .container{
+        width: 96vh;
+    }
+    #Map{
+        height: calc(55vh - 5px);
+    }
+}
+
+
+
+

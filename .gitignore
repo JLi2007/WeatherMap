@@ -1,0 +1,5 @@
+#.env file with API key
+.env
+
+#Node_modules
+node_modules

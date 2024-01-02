@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Weather App</h1><br>
+            <h4>Enter a city and the weather + location will be displayed!</h4>
+            <input type="text" id="inputs" placeholder="Enter a City Here" name="cityID">
+            <select id="country"></select>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="bottom-container">
+        <div class="output"><h3>No Data</h3></div>
+        <div id="Map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="/countries.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
