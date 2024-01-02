@@ -7,8 +7,8 @@ A Node.js project that retrieves real-time weather data for a specified city and
 **User-Friendly:** Simple interface for entering city and country information.
 
 **Technologies Used**
-Node.js
-Express.js
-Leaflet
-OpenWeatherMap API
-FlagsAPI
+Node.js,
+Express.js,
+Leaflet,
+OpenWeatherMap API,
+FlagsAPI,
